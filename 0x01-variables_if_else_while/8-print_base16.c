@@ -12,16 +12,16 @@ int main(void)
 {
 /*declaration*/
 
-	int n;
-	char L;
+	int num;
+	char letter;
 
-	for (n = 0; n < 10; n++)
+	for (num = 0; num < 10; num++)
 	{
-		putchar(n);
+		putchar((num % 10) + '0');
 	}
-	for (L = 'a'; L = 'f'; L++)
+	for (letter = 'a'; letter = 'f'; letter++)
 	{
-		putchar(L);
+		putchar(letter);
 	}
 	putchar('\n');
 
