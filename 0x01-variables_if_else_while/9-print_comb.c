@@ -13,14 +13,16 @@ int main(void)
 /*declaration*/
 
 	int num;
-	for ((num %100)+ '0');
+	for (num = 0; num <= 9; num++)
 	{
-		putchar((num % 10) +'0');
+		putchar(num);
 		if (num == 9)
-			continue;
+		{
+			break;
+		}
+
 		putchar(',');
 		putchar(' ');
-
 	}
 	putchar('\n');
 
