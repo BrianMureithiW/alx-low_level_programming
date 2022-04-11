@@ -13,16 +13,15 @@ int main(void)
 /*declaration*/
 
 	int num;
-	for (num = 0; num <= 9; num++)
+
+	for (num = 0; num < 10; num++)
 	{
 		putchar(num);
-		if (num == 9)
+		if (num != 9)
 		{
-			break;
-		}
-
 		putchar(',');
 		putchar(' ');
+		}
 	}
 	putchar('\n');
 
