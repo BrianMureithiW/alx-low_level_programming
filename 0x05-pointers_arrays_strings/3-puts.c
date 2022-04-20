@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
- * _puts - write a function that prints a string
- * to stdout.
- * @str: a string
- * return: 0
+ * _puts - prints a string
+ * @str: Apointer to an int that will be changed
+ *
+ * Return: void which means the answer is correct
  */
 
 void _puts(char *str)
 {
-	int i + 0;
+	char *d;
+	int n;
 
-	while (str[i] != '\0')
+	d = str;
+
+	for (n = 0; d[n]; n++)
 	{
-		_putchar(str[i]);
-		i++;
+		_putchar(d[n]);
 	}
 	_putchar('\n');
 }
