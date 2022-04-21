@@ -3,8 +3,7 @@
 
 /**
  * _strlen - a function that returns the length of a string
- *@s: a pointer that will be changed/updated
- *
+ * @s: a pointer that will be changed/updated
  * return: void which means answer is correct
  */
 
