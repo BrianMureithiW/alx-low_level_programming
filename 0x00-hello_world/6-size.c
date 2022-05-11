@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 /**
  * main - Entry point
@@ -14,5 +15,6 @@ int main(void)
 	printf("size of a long long int: %d byte(s)\n", sizeof(long long int));
 	printf("size of a float: %d byte(s)\n", sizeof(float));
 
+	getch();
 	return (0);
 }
