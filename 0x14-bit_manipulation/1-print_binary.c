@@ -2,13 +2,32 @@
 #include "main.h"
 
 /**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to be printed in binary.
+ * binary_to_uint - converts binary number to an unsigned int.
+ * @b: binary string.
+ * Return: unsigned int, converted number.
  */
-void print_binary(unsigned long int n)
-{
-	if (n > 1)
-		print_binary(n >> 1);
 
-	_putchar((n & 1) + '0');
+unsigned int binary_to_uint(const char *b)
+{
+	int total;
+
+	if (b == NULL)
+		return (0);
+
+	total = 0;
+	while (*b)
+	{
+		total <<= 1;
+		if (*b == '1')
+			total += 1;
+		else if (*b == '0')
+		{
+			b++;
+			continue;
+		}
+		else
+			return (0);
+		b++;
+	}
+	return (total);
 }
